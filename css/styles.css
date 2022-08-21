@@ -79,6 +79,9 @@ body {
 .main-title {
   font-size: 44px;
   font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--main-light);
 }
 
@@ -113,6 +116,7 @@ body {
 }
 .items {
   list-style-type: none;
+  font-style: normal;
 }
 
 .subject {
@@ -151,6 +155,17 @@ body {
 .footer {
   background-color: #2f303a;
 }
+
+.link-nav-adress {
+  font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+text-decoration: none;
+color: var(--main-light);
+}
+
+
 
 /* портфоліо */
 
