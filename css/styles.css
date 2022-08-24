@@ -198,6 +198,17 @@ text-decoration: none;
 color: rgba(255, 255, 255, 0.6);
 }
 
+.link-nav-header {
+font-weight: 500;
+line-height: 1.1;
+letter-spacing: 0.02em;
+color: var(--main-color-font);
+text-decoration: none;
+}
+
+.link-nav-header:hover {
+ color:  #2196F3;
+}
 
 
 /* портфоліо */
