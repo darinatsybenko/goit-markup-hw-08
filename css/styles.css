@@ -185,12 +185,17 @@ body {
 }
 
 .link-nav-adress {
-font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+text-decoration: none;
+color:var(--main-light)
+}
+
+.link-nav {
 line-height: 1.7;
 letter-spacing: 0.03em;
 text-decoration: none;
 color: rgba(255, 255, 255, 0.6);
-
 }
 
 
