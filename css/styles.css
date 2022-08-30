@@ -32,7 +32,6 @@
     .container-header {
       border-bottom:  1px solid #ECECEC;
       width: 1200px;
-      height: 80px;
       align-items: center;
       margin-left: auto;
       margin-right: auto;
@@ -40,7 +39,11 @@
       padding-right: 15px;
     display: flex;
     }
-
+ .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC ;
+ }
   
 
   .items .list-item:not(:last-child){
@@ -82,8 +85,6 @@
     letter-spacing: 0.03em;
     display: flex;
     margin-right: 93px;
-    padding-top: 32px;
-    padding-bottom: 18px;
     color: var(--main-dark);
   }
   
@@ -144,9 +145,14 @@
   
   .main-section {
       padding-top: 200px;
-      padding-bottom: 280px;
+      padding-bottom: 200px;
     background-color: #2f303a;
 
+  }
+
+  .section-text{
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   
   .hidden {
@@ -195,9 +201,11 @@
     color: var(--backg-color)
   }
   
+  .list-sub{
+    width: 270px;
+  }
   
   .subject {
-    margin-top: 94px;
     margin-bottom: 10px;
     gap: 30px;
     font-weight: 700;
@@ -208,17 +216,11 @@
   }
   
   .text {
-    margin-top: 0px;
-    margin-bottom: 118px;
-    height: 72px;
-    width: 270px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--main-color-font);
   }
   .title-img {
-
-    margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
     font-weight: 500;
@@ -240,6 +242,10 @@
     justify-content: center;
   }
    .img {
+   
+   }
+
+   .section-img {
     margin-bottom: 188px;
    }
   
@@ -269,12 +275,10 @@
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 94px;
     
   }
   .desc {
     margin-top: 10px;
-    margin-bottom: 30px;
     text-align: center;
     font-size: 16px;
     line-height: 1.1;
@@ -282,15 +286,26 @@
     color: var(--main-color-font);
   }
   
+  .img-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section-group {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
   /* футер */
   
   .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2f303a;
   }
   
   .logo-footer {
-    padding-top: 60px;
     display: block;
+    margin-bottom: 20px;
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -304,7 +319,6 @@
 
   
   .link-nav-adress {
-    margin-top: 20px;
    display: block;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -315,7 +329,6 @@
  
   .link-nav {
     display: block;
-    margin-top: 9px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
@@ -324,8 +337,6 @@
   
 .link-nav-tel {
   display: block;
-    margin-top: 9px;
-    padding-bottom: 69px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
@@ -345,6 +356,10 @@
   .link-nav-header:hover {
    color:  #2196F3;
   }
+  
+.list-item-adress {
+  margin-top: 9px;
+}
 
   .items-footer {
     
