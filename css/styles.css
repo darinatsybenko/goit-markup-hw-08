@@ -30,7 +30,6 @@
     margin-right: auto;
   }
     .container-header {
-      border-bottom:  1px solid #ECECEC;
       width: 1200px;
       align-items: center;
       margin-left: auto;
@@ -108,8 +107,6 @@
   
   
   .link {
-    padding-top: 32px;
-  padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -151,6 +148,7 @@
   }
 
   .section-text{
+    width: 270px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -246,7 +244,8 @@
    }
 
    .section-img {
-    margin-bottom: 188px;
+    width: 370px;
+  padding-bottom: 94px;
    }
   
   .heading {
@@ -375,7 +374,10 @@
   
   /* портфоліо */
   
-  
+  .list-btn {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   
   .hidden-title {
     color: var(--backg-color)
@@ -388,12 +390,13 @@
     display: flex;
     align-items: center;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
    .button {
-      margin-top: 94px;
-      margin-bottom: 50px;
-      margin-left: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
       border-radius: 4px;
       border: none;
       cursor: pointer;
@@ -414,17 +417,26 @@
       width: 370px;  
      }
 
+     .text-portfolio {
+     padding-top: 20px;
+     padding-bottom: 20px;
+     padding-left: 24px;
+     padding-right: 24px;
+     border-right: 30px;
+     border-bottom: 30px;
+     border-left: 30px;
+
+
+     }
+
+
      .img-portfolio:nth-child(n + 7) {
       margin-bottom: 94px;
     }
 
 
     .headline {
-      margin-top: 24px;
-      margin-left: 24px;
-      margin-right: 20px;
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin-bottom: 4px;
       font-weight: 700;
       font-size: 18px;
       line-height: 2;
@@ -444,11 +456,7 @@
 }
 
     .desc-img {
-      margin-top: 4px;
-      margin-left: 24px;
-      margin-bottom: 20px;
-      margin-top: 0px;
-      margin-bottom: 0px;
+    
       font-size: 16px;
       line-height: 1.8;
       letter-spacing: 0.03em;
