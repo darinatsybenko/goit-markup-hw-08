@@ -92,8 +92,6 @@
   }
   
   .link-studio {
-  padding-top: 32px;
-  padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -143,12 +141,20 @@
   .main-section {
       padding-top: 200px;
       padding-bottom: 200px;
+      height: 600px;
+      max-width: 1600px;
+      background-image:
+       url(../images/bgr.png);
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     background-color: #2f303a;
 
   }
 
   .section-text{
-    width: 270px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -244,7 +250,6 @@
    }
 
    .section-img {
-    width: 370px;
   padding-bottom: 94px;
    }
   
@@ -341,9 +346,7 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
-  .link-nav-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  .link-nav-header {  
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -388,6 +391,7 @@
     list-style-type: none;
     font-style: normal;
     display: flex;
+    gap: 8px;
     align-items: center;
     margin-top: 0px;
     margin-bottom: 50px;
