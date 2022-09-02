@@ -348,7 +348,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color-font);
   text-decoration: none;
-  gap: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .link-nav-header:hover {
@@ -453,3 +454,26 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-color-font);
 }
+
+/* svg*/
+
+.icon-envelope {
+fill: var(--main-color-font);
+margin-right: 10px;
+
+}
+
+.icon-envelope:hover {
+  fill:#2196F3 ;
+}
+
+.svg {
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  border-radius: 4px;
+}
+
