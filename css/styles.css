@@ -62,10 +62,8 @@ body {
   font-style: normal;
   display: flex;
   gap: 30px;
-  align-items: center;
   margin-top: 0px;
   margin-bottom: 0px;
-  align-items: center;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -74,7 +72,6 @@ body {
   list-style-type: none;
   font-style: normal;
   display: flex;
-  align-items: center;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -237,6 +234,19 @@ body {
   color: var(--secondary-color);
 }
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* третя секція*/
 
 .items-sub {
@@ -282,8 +292,8 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .desc {
-  margin-top: 10px;
   text-align: center;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.1;
   letter-spacing: 0.03em;
@@ -297,6 +307,7 @@ body {
 .section-group {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #F5F4FA;
 }
 
 /* футер */
@@ -477,3 +488,42 @@ margin-right: 10px;
   border-radius: 4px;
 }
 
+
+
+.icons {
+  display: flex;
+  gap: 34px;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.socifl-list-list {
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-color-font);
+  border-radius: 50%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.social-list-list:hover .team-social-list {
+  background-color: #2196F3;
+  fill: var(--main-light);
+  border-radius: 50%;
+}
+
+.social-list-list:focus .team-social-list {
+  background-color: #2196F3;
+  fill: var(--main-light);
+}
+
+.team-social-item {
+  display: list-item;
+}
+  .team-social-list {
+    fill: #AFB1B8;
+    
+   
+  }
