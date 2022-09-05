@@ -99,8 +99,8 @@ body {
   color: #2196f3;
 }
 
-.link-studio:hover {
-  color: var(--secondary-color);
+.link-studio:hover, .link-studio:focus {
+  color: #2196f3;
 }
 
 .link {
@@ -111,13 +111,11 @@ body {
   color: var(--secondary-color);
 }
 
-.link:hover {
+.link:hover, .link:focus {
   color: #2196f3;
 }
 
-.link:focus {
-  color: var(--secondary-color);
-}
+
 
 .link-nav {
   font-weight: 500;
@@ -133,6 +131,11 @@ body {
 
 .link-nav:active {
   color: var(--secondary-color);
+}
+
+.link-nav-header:hover, 
+.link-nav-header:focus {
+  color: #2196f3;
 }
 
 /*  перша секція */
@@ -178,6 +181,10 @@ body {
 }
 
 .btn {
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
   margin-top: 40px;
   display: block;
   margin-left: auto;
@@ -292,7 +299,7 @@ body {
 }
 .desc {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.1;
   letter-spacing: 0.03em;
@@ -313,6 +320,7 @@ body {
 /* футер */
 
 .footer {
+  padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
@@ -343,6 +351,16 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.link-nav:hover,
+.link-nav:focus {
+  color: #2196F3;
+}
+
+.link-nav-tel:hover,
+.link-nav-tel:focus {
+  color: #2196F3;
 }
 
 .link-nav-tel {
@@ -468,11 +486,12 @@ body {
 /* svg*/
 
 .icon-envelope {
-  fill: var(--main-color-font);
+  fill: currentColor;
   margin-right: 10px;
 }
 
-.icon-envelope:hover {
+.icon-envelope:hover,
+.icon-envelope:focus {
   fill: #2196f3;
 }
 
@@ -503,7 +522,8 @@ body {
   justify-content: center;
 }
 
-.social-list-list:hover {
+.social-list-list:hover,
+.social-list-list:focus {
   background-color: #2196f3;
   fill: var(--main-light);
 }
@@ -551,8 +571,8 @@ body {
 }
 
 .clients {
-  margin-bottom: 94px;
-  margin-top: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .clients-link:hover .icon-brand {
@@ -560,6 +580,14 @@ body {
 }
 
 .clients-link:hover {
+  border: 1px solid #2196f3;
+}
+
+.clients-link:focus .icon-brand {
+  fill: #2196f3;
+}
+
+.clients-link:focus {
   border: 1px solid #2196f3;
 }
 
@@ -577,13 +605,13 @@ body {
   justify-content: center;
 }
 
-.social-list-icon:hover {
+.social-list-icon:hover,
+ .social-list-icon:focus {
   background-color: #2196f3;
 }
 .subject-icon {
   font-size: 14px;
   margin-bottom: 20px;
-  margin-top: 72px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.03em;
@@ -615,7 +643,7 @@ body {
     1px 4px 6px rgb(0 0 0 / 16%);
 }
 
-.gallery-link{
+.gallery-link {
   border: 1px solid#EEEEEE;
   display: block;
   text-decoration: none;
