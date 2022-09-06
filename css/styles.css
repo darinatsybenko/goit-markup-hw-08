@@ -520,12 +520,13 @@ body {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  color: #AFB1B8;
 }
 
 .social-list-list:hover,
 .social-list-list:focus {
   background-color: #2196f3;
-  fill: var(--main-light);
+  color: var(--main-light);
 }
 
 .social-list-list:hover .team-social-list {
@@ -537,7 +538,7 @@ body {
   display: list-item;
 }
 .team-social-list {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .clients-list {
   display: flex;
