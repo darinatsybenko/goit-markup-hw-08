@@ -54,7 +54,18 @@
       <section class="main-section">
         <div class="container"> 
         <h1 class="main-title">Ефективні рішення для <br> вашого бізнесу</h1>
-        <button class="btn" type="button">Замовити послугу</button>
+        <button class="btn" type="button"
+        data-modal-open>Замовити послугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+           <button class="modal-btn" type="button"
+           data-modal-close>
+            <svg class="close-modal" width="30" height="30">
+              <use href="./images/symbol-defs.svg#icon-close"icon-close"icon-close" ></use>
+            </svg>
+           </button>
+          </div>
         </div>
       </section>
       <section class="section-text">
@@ -117,28 +128,49 @@
         <h2 class="heading">Чим ми займаємося</h2>
         <ul class="items-sub">
           <li>
+            <div class="overlay-img">
+              <div class="overlay-text" >
+                <p class="overlay-text-img">
+                  Десктопні додатки
+                </p>
+              </div>
             <img class="img"
               src="./images/img.jpg"
               alt="працюємо з комп'ютером"
               width="370"
               height="294"
             />
+            </div>
           </li>
           <li>
+            <div class="overlay-img">
+              <div class="overlay-text" >
+                <p class="overlay-text-img">
+                  Мобільні додатки
+                </p>
+              </div>
             <img class="img"
               src="./images/img2.jpg"
               alt="працюємо з телефоном"
               width="370"
               height="294"
             />
+            </div>
           </li>
           <li>
+            <div class="overlay-img">
+              <div class="overlay-text" >
+                <p class="overlay-text-img">
+                  Дизайнерські рішення
+                </p>
+              </div>
             <img class="img"
               src="./images/img3.jpg"
               alt="працюємо з планшетом"
               width="370"
               height="294"
             />
+            </div>
           </li>
         </ul>
       </section>
@@ -508,5 +540,6 @@
       </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
