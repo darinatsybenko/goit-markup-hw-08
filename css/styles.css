@@ -597,6 +597,7 @@ body {
 }
 
 .text-portfolio {
+  border: 1px solid var(--main-light);
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -752,10 +753,14 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
+ 
+  transition-property:#2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-brand {
-  transition-property: fill #2196f3;
+  transition-property:#2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -848,7 +853,6 @@ body {
 }
 
 .gallery-link {
-  border: 1px solid#EEEEEE;
   display: block;
   text-decoration: none;
   transition-property: box-shadow 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
