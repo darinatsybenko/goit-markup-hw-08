@@ -298,6 +298,7 @@ body {
   justify-content: center;
   cursor: pointer;
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -663,7 +664,6 @@ body {
   align-items: center;
   justify-content: center;
 
- 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -807,7 +807,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  transition-property: var(--backg-color);
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -853,8 +853,169 @@ body {
 .gallery-link {
   display: block;
   text-decoration: none;
-  transition-property: box-shadow 0px 1px 1px rgb(0 0 0 / 12%),
-    0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*form*/
+
+.register-form-link {
+  display: inline-block;
+}
+
+.register-form-title {
+  font-size: 20px;
+  line-height: 0.9;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-right: 39px;
+  margin-left: 41px;
+  margin-bottom: 12px;
+}
+
+.register-form-group {
+  margin-left: 41px;
+  margin-right: 39px;
+  margin-bottom: 28px;
+}
+
+.register-form-field {
+  display: block;
+  width: 448px;
+  height: 40px;
+  padding: 0;
+  margin-bottom: 28px;
+
+  position: relative;
+}
+
+.register-form-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  
+}
+
+
+
+.register-form-message {
+  width: 448px;
+  height: 120px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.register-form-agreement {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.register-form-btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+}
+
+.register-form-label {
+  display: block;
+  font-size: 12px;
+  color: var(--main-color-font);
+}
+
+.register-form-message {
+  display: block;
+  font-size: 12px;
+  line-height: 0.9;
+  resize: none;
+  padding-left: 16px;
+  padding-top: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.register-form-icon {
+  position: absolute;
+  top: 80%;
+  left: 10px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-input:hover + .register-form-icon {
+  fill: #2196f3;
+  
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-input:focus + .register-form-icon {
+  fill: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-link {
+  margin-top: px;
+  display: block;
+  color: rgba(117, 117, 117, 1);
+  user-select: none;
+}
+
+.register-form-btn {
+  display: block;
+  margin: auto;
+}
+
+.register-form-checkbox {
+  margin-top: px;
+}
+
+.icon-checked {
+  opacity: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-checkbox:checked + .register-form-checkbox
+.icon-checked {
+opacity: 1;
+}
+
+.register-form-checkbox:checked + .register-form-checkbox
+.icon-unchecked {
+opacity: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox {
+  
 }

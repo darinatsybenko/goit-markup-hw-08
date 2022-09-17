@@ -65,6 +65,68 @@
               <use href="./images/symbol-defs.svg#icon-close "icon-close"icon-close" ></use>
             </svg>
            </button>
+           <form class="register-form" name="register-form">
+            <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+            <div class="register-form-group" role="group">
+              <label class="register-form-field">
+                <span class="register-form-label">Ім'я</span>
+                <input 
+                class="register-form-input"
+                 type="text" name=""
+                 required
+                minlength="3"
+                placeholder="&nbsp;" />
+                <svg class="register-form-icon" width="12" height="12">
+                  <use href="./images/symbol-defs-form.svg#icon-Vector-3"></use>
+                </svg>
+              </label>
+              <label class="register-form-field">
+                <span  class="register-form-label">Телефон</span>
+                <input 
+                class="register-form-input"
+                type="tel" name=""
+                required
+                minlength="3"
+                placeholder="&nbsp;" />
+                <svg class="register-form-icon" width="12" height="12">
+                  <use href="./images/symbol-defs-form.svg#icon-Vectortel"></use>
+                </svg>
+              </label>
+              <label class="register-form-field" >
+                <span class="register-form-label">Пошта</span>
+                <input
+                class="register-form-input"
+                type="email" name="" 
+                required
+                minlength="3"
+                placeholder="&nbsp;"
+                />
+                <svg class="register-form-icon" width="12" height="12">
+                  <use href="./images/symbol-defs-form.svg#icon-Vector-4"></use>
+                </svg>
+              </label>
+              <label class="register-form-field">
+                <span class="register-form-label">Коментар</span>
+                
+                <textarea
+                class="register-form-message"
+                 name="" rows="5" placeholder="Введіть текст"></textarea>
+                
+                
+                 </div>
+                </label>
+            <label class="register-form-agreement">
+              <input
+              class="register-form-checkbox visually-hidden"
+              type="checkbox" id="" />
+              <svg class="register-form-checkbox" width="16" height="15">
+                <use class="icon-checked" href="./images/symbol-defs-form.svg#icon-icon-check" ></use>
+                <use class="icon-unchecked" href="./images/symbol-defs-form.svg#icon-Vector-5" ></use>
+              </svg>
+              <span class="register-form-link">Погоджуюся з розсилкою та приймаю <a href="" target="_blank">Умови договору</a></span>
+            </label>
+            <button class="register-form-btn  btn" type="submit">Відправити</button>
+           </form>
           </div>
         </div>
       </section>
@@ -538,6 +600,14 @@
         </li>
        </ul>
       </div>
+       <div class="form-footer">
+        <label for="">
+          <span>Підпишіться на розсилку</span>
+          <input type="email" name="" placeholder="E-mail" />
+          <button type="submit">
+            Підписатися</button>
+        </label>
+       </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
