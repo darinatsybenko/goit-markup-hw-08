@@ -292,6 +292,11 @@ body {
   top: 8px;
   right: 8px;
   border: 0;
+  background-color: var(--main-light);
+  
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
   align-items: center;
@@ -306,7 +311,25 @@ body {
 }
 
 .close-modal {
-  background-color: var(--main-light);
+  background-color:var(--main-light);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 80%;
+  width: 30px;
+  height: 30px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal:hover {
+  fill: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-modal:focus-within {
+  fill: #2196f3;
 }
 
 /* друга секція */
@@ -885,13 +908,16 @@ body {
 
 .register-form-field {
   display: block;
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding: 0;
   margin-bottom: 28px;
+  
 
   position: relative;
 }
+
+
 
 .register-form-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -901,7 +927,17 @@ body {
   width: 100%;
   height: 40px;
   padding-left: 42px;
-  
+ outline: transparent ;
+ transition-property: color;
+ transition-duration: 250ms;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+
+.register-form-input:focus {
+  border-color:  #2196f3;
 }
 
 
@@ -911,15 +947,19 @@ body {
   height: 120px;
   margin-top: 4px;
   margin-bottom: 20px;
+  outline: transparent;
 }
+
+.register-form-message:focus {
+  border-color: #2196f3;
+}
+
 
 .register-form-agreement {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
-  margin-top: 20px;
 }
 
 .register-form-btn {
@@ -944,6 +984,7 @@ body {
   padding-top: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
 }
 
 .register-form-icon {
@@ -966,14 +1007,16 @@ body {
 
 .register-form-input:focus + .register-form-icon {
   fill: #2196f3;
+  
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-link {
-  margin-top: px;
-  display: block;
+  
+  margin-bottom: 30px;
+  
   color: rgba(117, 117, 117, 1);
   user-select: none;
 }
@@ -984,7 +1027,8 @@ body {
 }
 
 .register-form-checkbox {
-  margin-top: px;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .icon-checked {
@@ -1016,6 +1060,46 @@ opacity: 0;
   margin: -1px;
 }
 
-.checkbox {
+.link-form {
+  color: rgba(33, 150, 243, 1);
   
 }
+
+/*футер форма */
+
+.form-footer {
+  display: flex;
+
+}
+ 
+.register-form {
+  font-size: 14px;
+  line-height: 0.8;
+  color: var(--main-light);
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.15),
+  0px 4px rgba(0, 0, 0, 0.15),
+  0px 4px rgba(0, 0, 0, 0.15);
+  background-color: #2F303A;
+  display: block;
+  margin-top: 20px;
+
+}
+
+.footer-btn {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.svg-btn {
+
+}
+
+

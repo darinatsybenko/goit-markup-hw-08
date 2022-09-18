@@ -61,8 +61,8 @@
           <div class="modal">
            <button class="modal-btn" type="button"
            data-modal-close>
-            <svg class="close-modal" width="30" height="30">
-              <use href="./images/symbol-defs.svg#icon-close "icon-close"icon-close" ></use>
+            <svg class="close-modal" width="11" height="11">
+              <use href="./images/symbol-defs-close-modal.svg#icon-close-black-18dp-2-1close "icon-close"icon-close" ></use>
             </svg>
            </button>
            <form class="register-form" name="register-form">
@@ -105,14 +105,11 @@
                   <use href="./images/symbol-defs-form.svg#icon-Vector-4"></use>
                 </svg>
               </label>
-              <label class="register-form-field">
-                <span class="register-form-label">Коментар</span>
-                
+              <label class="register-form">
+                <span class="register-form-label">Коментар</span> 
                 <textarea
                 class="register-form-message"
                  name="" rows="5" placeholder="Введіть текст"></textarea>
-                
-                
                  </div>
                 </label>
             <label class="register-form-agreement">
@@ -123,7 +120,7 @@
                 <use class="icon-checked" href="./images/symbol-defs-form.svg#icon-icon-check" ></use>
                 <use class="icon-unchecked" href="./images/symbol-defs-form.svg#icon-Vector-5" ></use>
               </svg>
-              <span class="register-form-link">Погоджуюся з розсилкою та приймаю <a href="" target="_blank">Умови договору</a></span>
+              <span class="register-form-link">Погоджуюся з розсилкою та приймаю <a class="link-form" href="" target="_blank">Умови договору</a></span>
             </label>
             <button class="register-form-btn  btn" type="submit">Відправити</button>
            </form>
@@ -601,11 +598,17 @@
        </ul>
       </div>
        <div class="form-footer">
-        <label for="">
-          <span>Підпишіться на розсилку</span>
-          <input type="email" name="" placeholder="E-mail" />
-          <button type="submit">
-            Підписатися</button>
+        <label class="register-form-footer" >
+          <span class="register-form" >Підпишіться на розсилку</span>
+          <input c
+          class="footer-input"
+          type="email" name=""  placeholder="E-mail" />
+          <button class="footer-btn btn" type="submit">
+            Підписатися
+            <svg class="svg-btn" width="24" height="24">
+              <use href="./images/symbol-defs-form.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </label>
        </div>
       </div>
