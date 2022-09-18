@@ -906,6 +906,19 @@ body {
   margin-bottom: 28px;
 }
 
+.modal-btn:hover, .modal-btn:focus{
+  fill:#2196F3;
+}
+.register-form-input:focus,
+.register-form-input:hover{
+  border-color:  #2196F3;
+}
+
+.register-form-message:focus,
+.register-form-message:hover{
+  border-color: #2196f3;
+}
+
 .register-form-field {
   display: block;
   width: 100%;
@@ -1072,9 +1085,13 @@ opacity: 0;
 
 }
  
-.register-form {
+.register-form-span {
   font-size: 14px;
-  line-height: 0.8;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--main-light);
 }
 
@@ -1084,22 +1101,42 @@ opacity: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: 0px 4px rgba(0, 0, 0, 0.15),
-  0px 4px rgba(0, 0, 0, 0.15),
   0px 4px rgba(0, 0, 0, 0.15);
   background-color: #2F303A;
-  display: block;
+  display: flex;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn {
+  margin-top: 0px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.15),
+  0px 4px rgba(0, 0, 0, 0.15),
+  0px 4px rgba(0, 0, 0, 0.15);
+  
+}
+.svg-btn {
+margin-left: 10px;
+
+
+}
+
+.register-btn {
+  display: flex;
+  gap: 12px;
+  height: 50px;
   margin-top: 20px;
 
 }
 
-.footer-btn {
-  width: 200px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.svg-btn {
 
-}
 
 
