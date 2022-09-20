@@ -476,6 +476,14 @@ body {
 
 /* футер */
 
+.group {
+  margin-right: auto;
+}
+
+.div-footer {
+  margin-right: 70px;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -860,7 +868,6 @@ body {
 .container-footer {
   display: flex;
   align-items: baseline;
-  gap: 70px;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
