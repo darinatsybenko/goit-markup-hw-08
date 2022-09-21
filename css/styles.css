@@ -413,6 +413,11 @@ body {
   color: var(--secondary-color);
 }
 
+.img-heading {
+
+}
+
+
 .items-name {
   list-style-type: none;
   font-style: normal;
@@ -452,12 +457,13 @@ body {
 }
 
 .overlay-img {
+  display: inline-block;
   position: relative;
 }
 
 .overlay-text {
   position: absolute;
-  bottom: 0;
+  bottom: -298px;
   left: 0;
   background-color: rgba(47, 48, 58, 0.8);
   padding-bottom: 27px;
@@ -478,7 +484,7 @@ body {
 }
 
 .img {
-  display: block;
+  display: inline-block;
 }
 
 /* футер */
