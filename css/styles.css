@@ -976,6 +976,7 @@ body {
 
 
 .register-form-agreement {
+  margin-bottom: 30px;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -1036,7 +1037,7 @@ body {
 
 .register-form-link {
   
-  margin-bottom: 30px;
+  
   
   color: rgba(117, 117, 117, 1);
   user-select: none;
@@ -1048,7 +1049,7 @@ body {
 }
 
 .register-form-checkbox {
-  margin-bottom: 30px;
+  
   cursor: pointer;
 }
 
