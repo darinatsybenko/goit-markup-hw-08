@@ -771,7 +771,26 @@ body {
 .team-social-list {
   fill: currentColor;
 }
-.clients-list {
+
+/*постійні клієнти*/
+
+.heading-clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--secondary-color);
+}
+
+
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients-meta {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -782,11 +801,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-brand {
-  fill: #afb1b8;
-}
-
-.clients-link {
+.clients-meta__clients-aside{
   display: flex;
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -800,42 +815,30 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-brand {
+.clients-meta__clients-aside:hover .clients-meta__icon-brand {
+  fill: #2196f3;
+}
+
+.clients-meta__clients-aside:hover {
+  border: 1px solid #2196f3;
+}
+
+.clients-meta__clients-aside:focus .clients-meta__icon-brand {
+  fill: #2196f3;
+}
+
+.clients-meta__clients-aside:focus {
+  border: 1px solid #2196f3;
+}
+
+.clients-meta__icon-brand {
+  fill: #AFB1B8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.heading-clients {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  color: var(--secondary-color);
-}
-
-.clients {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
-.clients-link:hover .icon-brand {
-  fill: #2196f3;
-}
-
-.clients-link:hover {
-  border: 1px solid #2196f3;
-}
-
-.clients-link:focus .icon-brand {
-  fill: #2196f3;
-}
-
-.clients-link:focus {
-  border: 1px solid #2196f3;
-}
+/**/
 
 .team-social-icon {
   fill: var(--main-light);
@@ -1183,6 +1186,8 @@ margin-left: 10px;
   margin-top: 20px;
 
 }
+
+
 
 
 
