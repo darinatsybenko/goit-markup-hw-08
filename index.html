@@ -104,7 +104,7 @@
               <input
               class="register-form-checkbox visually-hidden"
               type="checkbox" id="icon-checked"/>
-              <svg class="register-form-checkbox" width="16" height="15">
+              <svg class="" width="16" height="15">
                 <use class="icon-checked" href="./images/symbol-defs-form.svg#icon-icon-check" ></use>
                 <use class="icon-unchecked" href="./images/symbol-defs-form.svg#icon-Vector-5" ></use>
               </svg>
@@ -118,50 +118,50 @@
       <section class="section-text">
         <div class="container"> 
           <h2 class="hidden"> наші переваги</h2>
-        <ul class="items-section">
-          <li class="list-sub">
-            <div class="svg">
-              <svg class="satellite" width="67" height="70">
+        <ul class="preview">
+          <li class="preview__features">
+            <div class="preview__svg">
+              <svg class="preview__satellite" width="67" height="70">
                 <use href="./images/icon.svg#icon-antenna"></use>
               </svg>
               </div>
-            <h3 class="subject">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="text">
+            <h3 class="preview__subject">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="preview__text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="list-sub">
-            <div class="svg">
-              <svg class="satellite" width="67" height="70">
+          <li class="preview__features">
+            <div class="preview__svg">
+              <svg class="preview__satellite" width="67" height="70">
                 <use href="./images/icon.svg#icon-clock"></use>
               </svg>
               </div>
-            <h3 class="subject">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="text">
+            <h3 class="preview__subject">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="preview__text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="list-sub">
-            <div class="svg">
-              <svg class="satellite" width="70" height="54">
+          <li class="preview__features">
+            <div class="preview__svg">
+              <svg class="preview__satellite" width="70" height="54">
                 <use href="./images/icon.svg#icon-diagram"></use>
               </svg>
               </div>
-            <h3 class="subject">ПЛАНУВАННЯ</h3>
-            <p class="text">
+            <h3 class="preview__subject">ПЛАНУВАННЯ</h3>
+            <p class="preview__text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="list-sub">
-            <div class="svg">
-              <svg class="satellite" width="70" height="54">
+          <li class="preview__features">
+            <div class="preview__svg">
+              <svg class="preview__satellite" width="70" height="54">
                 <use href="./images/icon.svg#icon-astronaut"></use>
               </svg>
               </div>
-            <h3 class="subject">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="text">
+            <h3 class="preview__subject">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="preview__text">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -170,15 +170,15 @@
         </div>
       </section>
 
-      <section class="section-img">
+      <section class="carousel">
         <div class="container"> 
-        <h2 class="heading">Чим ми займаємося</h2>
-        <div class="img-heading">
-        <ul class="items-sub">
+        <h2 class="carousel__caption carousel__caption--visible">Чим ми займаємося</h2>
+        <div class="carousel__img-heading">
+        <ul class="carousel__items-sub">
           <li>
-            <div class="overlay-img">
-              <div class="overlay-text" >
-                <p class="overlay-text-img">
+            <div class="carousel__overlay-img">
+              <div class="carousel__overlay-text" >
+                <p class="carousel__overlay-text-img">
                   Десктопні додатки
                 </p>
               </div>
@@ -186,9 +186,9 @@
             <img class="img" src="./images/img.jpg" alt="працюємо з комп'ютером" width="370" height="294"/>           
           </li>
           <li>
-            <div class="overlay-img">
-              <div class="overlay-text" >
-                <p class="overlay-text-img">
+            <div class="carousel__overlay-img">
+              <div class="carousel__overlay-text" >
+                <p class="carousel__overlay-text-img">
                   Мобільні додатки
                 </p>
               </div>
@@ -196,9 +196,9 @@
             <img class="img" src="./images/img2.jpg" alt="працюємо з телефоном" width="370" height="294"/>
            </li>
           <li>
-            <div class="overlay-img">
-              <div class="overlay-text" >
-                <p class="overlay-text-img">
+            <div class="carousel__overlay-img">
+              <div class="carousel__overlay-text" >
+                <p class="carousel__overlay-text-img">
                   Дизайнерські рішення
                 </p>
               </div>
@@ -211,7 +211,7 @@
       </section>
       <section class="section-group">
         <div class="container"> 
-        <h2 class="heading">Наша команда</h2>
+        <h2 class="carousel__caption--visible">Наша команда</h2>
         <ul class="items-name">
           <li class="div-img">
             <img
@@ -485,7 +485,7 @@
     <footer class="footer">
       <div class="container-footer"> 
         <div class="div-footer">
-      <a class="logo__footer" href="./index.html"><span class="Web">Web</span>Studio</a>
+      <a class="logo-footer" href="./index.html"><span class="Web">Web</span>Studio</a>
       <address>
         <ul class="items-footer">
           <li class="list-item">
@@ -557,14 +557,13 @@
         </li>
        </ul>
       </div>
-       <div class="footer-form ">
-        <label class="breadcrumbs">
+       <div class="footer-form">
+        <label class="breadcrumbs">      
           <strong class="register-form-span">Підпишіться на розсилку</strong>
-          
           <input class="footer-input"
           type="email" name="@mail"  placeholder="E-mail"/>
         </label>
-        <button class="footer-btn " type="submit">Підписатися
+        <button class="footer-btn" type="submit">Підписатися
           <svg class="svg-btn" width="24" height="24">
             <use href="./images/symbol-defs-form.svg#icon-icon-send"></use>
           </svg>
