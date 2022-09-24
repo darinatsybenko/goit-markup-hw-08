@@ -314,9 +314,7 @@ body {
   font-size: 20px;
   line-height: 0.9;
   color: var(--secondary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;text-align: center;
   margin-bottom: 12px;
 }
 
@@ -362,8 +360,9 @@ body {
 
 .register-form-icon {
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 15px;
+  transform: translateY(-50%);
 
   transition-property: color;
   transition-duration: 250ms;
@@ -937,8 +936,6 @@ opacity: 0;
 }
 
 .footer-form  {
-  
-  display: flex;
   gap: 12px;
   height: 50px;
   margin-top: 20px;
@@ -950,12 +947,16 @@ opacity: 0;
 
 .register-form-span {
   font-size: 14px;
-  margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-light);
+}
+
+.wrapper {
+  margin-top: 20px;
+  display: flex;
 }
 
 .footer-input {
