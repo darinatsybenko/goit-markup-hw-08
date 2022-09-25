@@ -418,15 +418,16 @@ body {
   cursor: pointer;
 }
 
-.register-form-checkbox:checked + .register-form-checkbox
-.icon-checked {
-opacity: 1;
+
+
+.register-form-checkbox:checked + .register-form-icons .icon-checked {
+  opacity: 1;
 }
 
-.register-form-checkbox:checked + .register-form-checkbox
-.icon-unchecked {
-opacity: 0;
-}
+.register-form-checkbox:checked + .register-form-icons .icon-unchecked {
+  opacity: 0;
+} 
+
 
 .visually-hidden {
   position: absolute;
@@ -439,6 +440,13 @@ opacity: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+
+
+.icon-unchecked{ 
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-checked {
@@ -935,11 +943,6 @@ opacity: 0;
   fill: var(--main-light);
 }
 
-.footer-form  {
-  gap: 12px;
-  height: 50px;
-  margin-top: 20px;
-}
 
 .breadcrumbs {
   display: flex;
@@ -957,6 +960,7 @@ opacity: 0;
 .wrapper {
   margin-top: 20px;
   display: flex;
+  gap: 12px;
 }
 
 .footer-input {
@@ -978,8 +982,6 @@ opacity: 0;
 
 .footer-btn {
   margin-top: 0px;
-  width: 200px;
-  height: 50px;
   display: flex;
   border-radius: 4px;
   box-shadow: 0px 4px rgba(0, 0, 0, 0.15),
