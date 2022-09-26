@@ -1,0 +1,93 @@
+.main-nav {
+    margin-right: auto;
+  }
+
+  .items {
+    list-style-type: none;
+    font-style: normal;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .items .list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .link-studio {
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #2196f3;
+  
+    position: relative;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        bottom: 0;
+        background-color: #2196f3;
+        position: absolute;
+      }
+  }
+  
+  .link {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--secondary-color);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: #2196f3;
+  }
+  }
+
+  /*контакты*/
+
+.link-nav-header {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--main-color-font);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+  
+  .icon-envelope {
+    fill: currentColor;
+    margin-right: 10px;
+
+    &:hover,
+    &:focus {
+    fill: #2196f3;
+  }
+  }

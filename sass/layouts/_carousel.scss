@@ -1,0 +1,54 @@
+/*Чим ми займаємося*/
+.carousel {
+    padding-bottom: 94px;
+  }
+  
+  .carousel__caption--visible {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+  }
+  
+  .img {
+    display: inline-block;
+  }
+  
+  .carousel__items-sub {
+    list-style-type: none;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .carousel__overlay-img {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .carousel__overlay-text {
+    position: absolute;
+    bottom: -298px;
+    left: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-bottom: 27px;
+    padding-top: 27px;
+  
+    width: 370px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel__overlay-text-img {
+    line-height: 1.1;
+  
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+  }
