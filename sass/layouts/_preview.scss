@@ -2,8 +2,7 @@
 
 .slogan {
   // mobile
-  @media screen and (min-width:484px) {
-    max-width: 484px;
+  @media screen and (min-width:480px) {
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 15px;
@@ -13,7 +12,6 @@
 
   // tablet
   @media screen and (min-width:768px) {
-    max-width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 15px;
@@ -22,7 +20,6 @@
 
   // desktop
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
     padding-left: 215px;
@@ -45,7 +42,7 @@
   }
   
   .preview {
-    @media screen and (min-width:484px) {
+    @media screen and (min-width:480px) {
       list-style-type: none;
       font-style: normal;
       margin-top: 60px;
@@ -79,7 +76,12 @@
   
   .preview__features {
 
+    @media screen and (min-width:480px) {
+      width: 450px;
+    }
+
     @media screen and (min-width:768px) {
+      width: 354px;
       flex-basis: 50%;
     }
     
@@ -92,17 +94,22 @@
         margin-bottom: 30px;
       }
     }
-
     @media screen and (max-width:1119px) {
       &:nth-child(-n + 2) {
         margin-bottom: 30px;
-      }
     }
-    
   }
   
+    @media screen and (max-width:1119px) {
+      &:nth-child(2n + 1) {
+       margin-right: 30px;
+      }
+    }
+  }
+    
+  
   .preview__svg {
-    @media screen and (min-width:484px) {
+    @media screen and (min-width:480px) {
       background-color: #f5f4fa;
       margin-bottom: 30px;
       display: flex;
@@ -143,6 +150,11 @@
      letter-spacing: 0.03em;
      text-transform: uppercase;
      color: var(--secondary-color);
+
+     @media screen and (min-width:480px) {
+      text-align: center;
+
+     }
   }
   
   .preview__text {

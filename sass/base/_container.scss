@@ -6,19 +6,19 @@
 
 // desktop
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   // mobile
-  @media screen and (min-width:484px) {
-    max-width: 484px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width:480px) {
+    width: 480px;
     outline: 1px solid red;
   }
 
   // tablet
   @media screen and (min-width:768px) {
-    max-width: 768px;
+    width: 768;
     outline: 1px solid red;
   }
 
@@ -26,6 +26,5 @@
     width: 1200px;
     outline: 1px solid red;
   }
-
 }
 
