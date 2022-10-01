@@ -54,7 +54,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768;
+    width: 768px;
     outline: 1px solid red;
   }
 }
@@ -485,26 +485,20 @@ body {
 
 @media screen and (min-width: 480px) {
   .slogan {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .slogan {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .slogan {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 215px;
-    padding-right: 215px;
+    margin-top: 94px;
+    margin-bottom: 94px;
   }
 }
 
@@ -539,12 +533,16 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style-type: none;
     font-style: normal;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
+    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -554,30 +552,45 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
+    margin: -15px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .preview__features {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 768px) {
   .preview__features {
-    width: 354px;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (max-width: 1119px) {
+  .preview__features:first-child {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .preview__features:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .preview__features:nth-child(2) {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .preview__features:nth-child(3) {
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .preview__features {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 960px) / 4);
+        flex-basis: calc((100% - 960px) / 4);
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -585,19 +598,8 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 1119px) {
-  .preview__features:nth-child(-n+2) {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 1119px) {
-  .preview__features:nth-child(2n+1) {
-    margin-right: 30px;
-  }
-}
-
 @media screen and (min-width: 480px) {
-  .preview__svg {
+  .preview__features .preview__svg {
     background-color: #f5f4fa;
     margin-bottom: 30px;
     display: -webkit-box;
@@ -614,7 +616,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .preview__svg {
+  .preview__features .preview__svg {
     background-color: #f5f4fa;
     margin-bottom: 30px;
     display: -webkit-box;
@@ -631,7 +633,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .preview__svg {
+  .preview__features .preview__svg {
     background-color: #f5f4fa;
     margin-bottom: 30px;
     display: -webkit-box;
@@ -643,12 +645,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 120px;
+    height: 120px;
+    width: 270px;
     border-radius: 4px;
   }
 }
-
-.preview__subject {
+.preview__features .preview__subject {
   margin-bottom: 10px;
   gap: 30px;
   font-weight: 700;
@@ -658,12 +660,16 @@ body {
   color: var(--secondary-color);
 }
 @media screen and (min-width: 480px) {
-  .preview__subject {
+  .preview__features .preview__subject {
     text-align: center;
   }
 }
-
-.preview__text {
+@media screen and (min-width: 768px) {
+  .preview__features .preview__subject {
+    text-align: left;
+  }
+}
+.preview__features .preview__text {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
