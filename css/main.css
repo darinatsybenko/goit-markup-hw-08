@@ -827,36 +827,149 @@ body {
   fill: currentColor;
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .clients {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 
-.heading-clients {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  color: var(--secondary-color);
+@media screen and (min-width: 480px) {
+  .heading-clients {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 0.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgb(33, 33, 33);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading-clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+  }
 }
 
 .clients-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px;
-  list-style: none;
   -webkit-transition-property: #2196f3;
   transition-property: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .clients-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 30px;
+    list-style: none;
+  }
+}
+@media screen and (max-width: 1119px) {
+  .clients-meta {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients-meta__clients-items {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .clients-meta__clients-items:first-child {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .clients-meta__clients-items:last-child {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .clients-meta__clients-items:nth-child(2) {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .clients-meta__clients-items:nth-child(3) {
+    margin-left: 0px;
+  }
+  .clients-meta__clients-items:nth-child(4) {
+    margin-right: 0px;
+  }
+  .clients-meta__clients-items:nth-child(5) {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .clients-meta__clients-items:nth-child(6) {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-meta__clients-items:first-child {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .clients-meta__clients-items:nth-child(2) {
+    margin-top: 0px;
+  }
+  .clients-meta__clients-items:nth-child(3) {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .clients-meta__clients-items:nth-child(4) {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .clients-meta__clients-items:nth-child(5) {
+    margin-bottom: 0px;
+  }
+  .clients-meta__clients-items:nth-child(6) {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-meta__clients-items {
+    margin: 0px;
+  }
 }
 
 .clients-meta__clients-aside {
@@ -879,6 +992,17 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .clients-meta__clients-aside {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-meta__clients-aside {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients-meta__clients-aside:hover .clients-meta__icon-brand {
