@@ -1,8 +1,26 @@
 .group {
+  @media screen and (min-width:480px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1119px) {
+    position: absolute;
+    top: 65px;
+    right: 89px;
+  }
+
+  @media screen and (min-width:1200px) {
     margin-right: auto;
+    
+  }
+    
   }
   
   .subject-icon {
+    @media screen and (min-width:480px) {
+      text-align: center;
+    }
+
     font-size: 14px;
     margin-bottom: 20px;
     font-weight: 700;

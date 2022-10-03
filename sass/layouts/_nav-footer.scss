@@ -1,51 +1,87 @@
-.items-footer {
-    list-style-type: none;
-    font-style: normal;
-    display: block;
-    align-items: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
+ .items-footer {
+     list-style-type: none;
+     font-style: normal;
+     display: block;
+     align-items: center;
+     margin-top: 0px;
+     margin-bottom: 0px;
   }
   
-  .link-nav-adress {
+   .link-nav-adress {
+    @media screen and (min-width:480px) {
+      margin-bottom: 8px;
+     text-align: center;
+    }
+   @media screen and (min-width:1200px) {
+    display: block;
+     line-height: 1.7;
+     letter-spacing: 0.03em;
+     text-decoration: none;
+     color: var(--main-light);
+   }
+   @media screen and (min-width:1200px) {
     display: block;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--main-light);
+    margin-bottom: 9px;
+   }
+      display: block;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+     color: var(--main-light);
   }
   
-  .list-item-adress {
-    margin-top: 9px;
-  }
+  //  .list-item-adress {
+    //  margin-top: 9px;
+  // }
   
-  .link-nav {
-    display: block;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
+   .link-nav {
+    @media screen and (min-width:480px) {
+      margin-bottom: 8px;
+      text-align: center;
+     }
 
-    &:hover,
-    &:focus {
+     @media screen and (min-width:480px) {
+      display: block;
+     line-height: 1.7;
+     letter-spacing: 0.03em;
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.6);
+     margin-bottom: 9px;
+     }
+     display: block;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.6);
+
+     &:hover,
+     &:focus {
+       color: #2196f3;
+     }
+   }
+  
+   .link-nav-tel {
+    @media screen and (min-width:480px) {
+      text-align: center;
+    }
+     display: block;
+     line-height: 1.7;
+     letter-spacing: 0.03em;
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.6);
+  
+     transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover,
+     &:focus {
       color: #2196f3;
-    }
-  }
-  
-  .link-nav-tel {
-    display: block;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-  
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     }
+   }
 
-    &:hover,
-    &:focus {
-     color: #2196f3;
-    }
-  }
   
