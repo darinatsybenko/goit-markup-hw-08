@@ -11,7 +11,7 @@
       // mobile
       @media screen and (min-width:480px) {
         width: 480px;
-        height: 603px;
+        height:603px;
         outline: 1px solid red;
       }
 
@@ -21,13 +21,11 @@
         outline: 1px solid red;
        
       }
-
-      @media screen and (min-width:768px) and (max-width:1119px) {
-        position: relative;
-      }
     
         @media screen and (min-width: 1200px) {
-          width: 1200px;
+          width: 1600px;
+          height: 252px;
+          background-color: #2f303a;
          display: flex;
         align-items: baseline;
         padding-left: 15px;
@@ -42,21 +40,45 @@
   
    .div-footer {
     @media screen and (min-width:480px) {
+     padding-bottom: 60px;
+    }
+
+    @media screen and (min-width:768px) {
+      padding: 0;
+    }
+
+    @media screen and (min-width:1200px){
+    margin-right: 70px;
+    }
+     
+   }
+
+   .div-nav-social {
+    @media screen and (min-width:480px) {
      padding-top: 60px;
      padding-bottom: 60px; 
     }
 
+
+
     @media screen and (min-width:768px) {
-      padding-right: 460px;
+      display: flex;
+      align-items: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-left: 76px;
+      margin-right: 89px;
+      align-items: flex-start;
     }
 
     @media screen and (min-width:1200px){
-      margin-top: 60px;
-      margin-left: 215px;
-      margin-right: 70px;
-      padding: 0;
+      padding-left: 215px;
+      padding-right: 93px;
+      padding-top: 72px;
+      padding-bottom: 60px;
+
+      margin: 0;
     }
-     
    }
   
   
