@@ -1,20 +1,43 @@
 
 /* header */
 
-.header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ececec;
-  }
+  .header {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      // border-bottom: 1px solid #ececec;
+   }
   
   .header__container {
-    width: 1200px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    // mobile
+    @media screen and (min-width:480px) {
+      width: 480px;
+      outline: 1px solid red;
+      position: relative;
+      
+    }
+  
+    // tablet
+    @media screen and (min-width:768px) {
+      width: 768px;
+      outline: 1px solid red;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      outline: 1px solid red;
+    }
+
+    // width: 1200px;
+     align-items: center;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 15px;
+     padding-right: 15px;
+     display: flex;
   }
 
   
