@@ -324,14 +324,50 @@ body {
   padding-bottom: 200px;
   height: 600px;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgr.png);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgr.png);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Img_l-@1x.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img_l-@1x.png);
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #2f303a;
+}
+@media screen and (min-width: 1200px) {
+  .main-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/Img_l-@1x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/Img_l-@1x.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/Img_l-@2x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/Img_l-@2x.png);
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Header\ img_s-@1x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header\ img_s-@1x.png);
+  }
+}
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
+  .main-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/Header\ img_s-@2x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/Header\ img_s-@2x.png);
+  }
+}
+@media screen and (min-width: 481px) {
+  .main-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Header\ img_m-@1x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header\ img_m-@1x.png);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .main-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/Header\ img_m-@2x.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/Header\ img_m-@2x.png);
+  }
 }
 
 .main-title {
@@ -344,6 +380,24 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-light);
+}
+@media screen and (max-width: 767px) {
+  .main-title {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 44px;
+    line-height: 1.3;
+  }
 }
 
 .backdrop {
@@ -381,6 +435,12 @@ body {
   background-color: var(--main-light);
   -webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14), 3px 0px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14), 3px 0px 1px rgba(0, 0, 0, 0.12);
+}
+@media screen and (max-width: 1119px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .modal-btn {
@@ -436,6 +496,12 @@ body {
 .close-modal:focus-within {
   fill: #2196f3;
 }
+@media screen and (max-width: 1119px) {
+  .close-modal {
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+}
 
 .register-form-title {
   font-size: 20px;
@@ -445,9 +511,19 @@ body {
   text-align: center;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 1119px) {
+  .register-form-title {
+    line-height: 1.5;
+  }
+}
 
 .register-form-group {
   margin-bottom: 28px;
+}
+@media screen and (max-width: 1119px) {
+  .register-form-group {
+    margin-bottom: 20px;
+  }
 }
 
 .register-form-field {
@@ -538,6 +614,11 @@ body {
 .register-form-message:focus, .register-form-message:hover {
   border-color: #2196f3;
 }
+@media screen and (max-width: 1119px) {
+  .register-form-message {
+    width: 370px;
+  }
+}
 
 .register-form-agreement {
   margin-bottom: 30px;
@@ -551,6 +632,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 1119px) {
+  .register-form-agreement {
+    gap: 8px;
+  }
 }
 
 .register-form-checkbox {
@@ -587,6 +673,12 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (max-width: 1119px) {
+  .register-form-link {
+    font-size: 12px;
+    line-height: 1.1;
+  }
 }
 
 .register-form-btn {
@@ -1820,6 +1912,11 @@ body {
   line-height: 1.8;
   letter-spacing: 0.06em;
   color: var(--main-light);
+}
+@media screen and (max-width: 767px) {
+  .btn {
+    margin-top: 30px;
+  }
 }
 .btn:active {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

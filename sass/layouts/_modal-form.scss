@@ -4,10 +4,18 @@
     color: var(--secondary-color);
     display: block;text-align: center;
     margin-bottom: 12px;
+
+    @media screen and (max-width:1119px) {
+      line-height: 1.5;
+    }
   }
   
   .register-form-group {
     margin-bottom: 28px;
+
+    @media screen and (max-width:1119px) {
+      margin-bottom: 20px;
+    }
   }
   
   .register-form-field {
@@ -92,6 +100,10 @@
     &:hover{
       border-color: #2196f3;
     }
+
+    @media screen and (max-width:1119px) {
+      width: 370px;
+    }
   }
   
   .register-form-agreement {
@@ -100,6 +112,10 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width:1119px) {
+      gap: 8px;
+    }
   }
   
   .register-form-checkbox {
@@ -129,6 +145,11 @@
     display: inline-block;
     color: rgba(117, 117, 117, 1);
     user-select: none;
+
+    @media screen and (max-width:1119px) {
+      font-size: 12px;
+      line-height: 1.1;
+    }
   }
   
   .register-form-btn {
