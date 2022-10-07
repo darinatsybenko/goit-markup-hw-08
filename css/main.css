@@ -55,19 +55,16 @@ body {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    outline: 1px solid red;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    outline: 1px solid red;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    outline: 1px solid red;
   }
 }
 
@@ -96,20 +93,17 @@ body {
 @media screen and (min-width: 480px) {
   .header__container {
     width: 480px;
-    outline: 1px solid red;
     position: relative;
   }
 }
 @media screen and (min-width: 768px) {
   .header__container {
     width: 768px;
-    outline: 1px solid red;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__container {
     width: 1200px;
-    outline: 1px solid red;
   }
 }
 
@@ -436,13 +430,13 @@ body {
   -webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14), 3px 0px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14), 3px 0px 1px rgba(0, 0, 0, 0.12);
 }
-@media screen and (max-width: 1119px) {
+@media screen and (min-width: 480px) and (max-width: 1119px) {
   .modal {
     width: 450px;
     height: 609px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .modal {
     width: 320px;
     height: 500px;
@@ -626,7 +620,7 @@ body {
     width: 370px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .register-form-message {
     width: 240px;
     height: 25px;
@@ -744,7 +738,7 @@ body {
     margin-bottom: 94px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .slogan {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -905,7 +899,7 @@ body {
     border-radius: 4px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .preview__svg {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -935,7 +929,7 @@ body {
     text-align: left;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .preview__subject {
     text-align: center;
   }
@@ -946,7 +940,7 @@ body {
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .preview__text {
     text-align: center;
   }
@@ -1063,7 +1057,7 @@ body {
     padding-bottom: 60px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .pagination {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1135,7 +1129,7 @@ body {
             justify-content: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .items-name {
     display: block;
   }
@@ -1168,7 +1162,7 @@ body {
     width: calc((100% - 60px) / 2);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .div-img {
     width: 240px;
   }
@@ -1255,7 +1249,7 @@ body {
     margin-bottom: 94px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .clients {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1282,7 +1276,7 @@ body {
     color: var(--secondary-color);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .heading-clients {
     text-align: center;
     margin-bottom: 10px;
@@ -1398,7 +1392,7 @@ body {
     margin: 0px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .clients-meta__clients-items {
     margin-bottom: 5px;
     display: -webkit-box;
@@ -1473,7 +1467,7 @@ body {
   margin-top: 60px;
   background-color: #2f303a;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .footer {
     margin: 0;
   }
@@ -1514,10 +1508,9 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid red;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .container-footer {
     padding-bottom: 20px;
   }
@@ -1570,7 +1563,7 @@ body {
     margin: 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .div-nav-social {
     padding-top: 20px;
   }
@@ -1612,7 +1605,7 @@ body {
             justify-content: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .logo-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1727,7 +1720,7 @@ body {
     margin-left: auto;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .group {
     margin-top: 20px;
   }
@@ -1747,7 +1740,7 @@ body {
     text-align: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .subject-icon {
     text-align: center;
     margin-bottom: 15px;
@@ -1766,7 +1759,7 @@ body {
     padding-bottom: 94px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .footer-form {
     padding-top: 20px;
   }
@@ -1829,7 +1822,7 @@ body {
     gap: 12px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .wrapper {
     display: block;
   }
@@ -1868,7 +1861,7 @@ body {
     margin: 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .footer-input {
     width: 290px;
   }
@@ -1923,7 +1916,7 @@ body {
     margin-left: auto;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .footer-btn {
     margin-top: 20px;
   }
@@ -2387,7 +2380,7 @@ body {
   text-decoration: none;
   color: #2196f3;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .link-menu-studio {
     font-size: 20px;
   }
@@ -2407,7 +2400,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .link-menu {
     font-size: 20px;
   }
@@ -2433,7 +2426,7 @@ body {
   color: rgb(33, 150, 243);
   text-decoration: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .link-social {
     font-size: 12px;
   }
@@ -2451,7 +2444,7 @@ body {
   color: rgb(33, 150, 243);
   text-decoration: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .link-menu-tel {
     font-size: 20px;
   }
@@ -2467,7 +2460,7 @@ body {
   color: #757575;
   text-decoration: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .link-menu-mail {
     font-size: 20px;
   }

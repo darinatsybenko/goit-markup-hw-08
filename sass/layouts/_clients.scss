@@ -14,7 +14,7 @@
       margin-bottom: 94px;
     }
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:479px) {
       padding-top: 20px;
       padding-bottom: 20px;
     }
@@ -39,7 +39,7 @@
       color: var(--secondary-color);
     }
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:479px) {
       text-align: center;
       margin-bottom: 10px;
     }
@@ -148,14 +148,13 @@
     margin: 0px;
    }
 
-   @media screen and (max-width:480px) {
+   @media screen and (max-width:479px) {
     margin-bottom: 5px;
      display: flex;
      justify-content: center;
    }
   }
     
-     
   
    .clients-meta__clients-aside{
    
