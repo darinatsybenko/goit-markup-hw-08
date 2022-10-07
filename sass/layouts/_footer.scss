@@ -1,6 +1,10 @@
  .footer {
   margin-top: 60px;
      background-color: #2f303a;
+
+     @media screen and (max-width:480px) {
+      margin: 0;
+     }
    }
   
     .container-footer {
@@ -79,6 +83,10 @@
 
       margin: 0;
     }
+
+    @media screen and (max-width:480px) {
+      padding-top: 20px;
+    } 
    }
   
   

@@ -7,6 +7,11 @@
       padding-top: 60px;
       padding-bottom: 60px;
     }
+
+    @media screen and (max-width:480px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   .carousel__caption--team {
@@ -56,6 +61,10 @@
       // gap: 30px;
       justify-content: center;
     }
+
+    @media screen and (max-width:480px) {
+      display: block;
+    }
   }
   
   .div-img {
@@ -80,6 +89,10 @@
     @media screen and (min-width:768px) {
       margin: 15px;
       width: calc( (100% - 2 * 30px) / 2);
+    }
+
+    @media screen and (max-width:480px) {
+      width: 240px;
     }
   }
   

@@ -46,6 +46,11 @@
            +38 096 111 11 11</a>
        </li>
      </ul>
+     <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="40" height="40">
+        <use href="./images/icon.svg#icon-menu_40pxburger-open"></use>
+      </svg>
+     </button>
      </div>
    </header>
         <main>
@@ -209,7 +214,9 @@
         </main>
         <footer class="footer">
           <div class="container-footer"> 
+            <div class="div-nav-social">
             <div class="div-footer">
+              
           <a class="logo-footer" href="./index.html"><span class="Web">Web</span>Studio</a>
           <address>
             <ul class="items-footer">
@@ -282,7 +289,8 @@
             </li>
            </ul>
           </div>
-          <div class="footer-form">
+        </div>
+           <div class="footer-form">
             <strong class="register-form-span">Підпишіться на розсилку</strong>
             <form class="wrapper" >
             <label class="breadcrumbs">      
@@ -297,6 +305,66 @@
           </form>
            </div>
           </div>
-        </footer>
+        </footer> 
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+         <svg width="40" height="40">
+          <use href="./images/icon.svg#icon-close_40pxburger-close"></use>
+         </svg>
+          </button>
+     
+             <ul class="mobile-menu">
+               <li class="list-menu">
+                 <a class="link-menu-studio" href="./index.html">Студія</a>
+               </li>
+               <li class="list-menu">
+                 <a class="link-menu" href="./portfolio.htm">Портфоліо</a>
+               </li>
+               <li class="list-menu">
+                 <a class="link-menu" href="index.html">Контакти</a>
+               </li>
+             </ul>
+           <ul class="items-menu">
+             <li class="list-menu-tel">
+               <a class="link-menu-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+             </li>
+             <li class="list-menu-mail">
+               <a class="link-menu-mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+             </li>
+           </ul>
+          <ul class="social-menu">
+           <li class="list-social-menu">
+             <a href="https://www.instagram.com"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="instagram" class="link-social">Instagram</a>
+           </li>
+           <li class="list-social-menu">
+             <a href="https://twitter.com"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="twitter" class="link-social">Twitter</a>
+           </li>
+           <li class="list-social-menu">
+             <a href="ttps://www.facebook.com/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="facebook" class="link-social">Facebook</a>
+           </li>
+           <li class="list-social-menu">
+             <a href="https://ua.linkedin.com"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="linredin" class="link-social">LinkedIn</a>
+           </li>
+          </ul>
+         </div>
+         <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

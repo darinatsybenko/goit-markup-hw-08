@@ -37,9 +37,14 @@
 
       @media screen and (max-width:1119px) {
         width: 450px;
-        height: 609px;
-        
+        height: 609px; 
       }
+
+      @media screen and (max-width:480px) {
+        width: 320px;
+        height: 500px;
+        left: 27%;
+    }
   }
 
 
