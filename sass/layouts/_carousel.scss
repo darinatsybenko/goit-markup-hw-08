@@ -1,6 +1,10 @@
 /*Чим ми займаємося*/
 .carousel {
     padding-bottom: 94px;
+
+    @media screen and (max-width:1119px) {
+      display: none;
+    }
   }
   
   .carousel__caption--visible {
@@ -11,10 +15,18 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+
+    @media screen and (max-width:1119px) {
+      display: none;
+    }
   }
   
   .img {
     display: inline-block;
+
+    @media screen and (max-width:1119px) {
+      display: none;
+    }
   }
   
   .carousel__items-sub {
@@ -24,11 +36,19 @@
     align-items: center;
     gap: 30px;
     justify-content: center;
+
+    @media screen and (max-width:1119px) {
+      display: none;
+    }
   }
   
   .carousel__overlay-img {
     display: inline-block;
     position: relative;
+
+    @media screen and (max-width:1119px) {
+      display: none;
+    }
   }
   
   .carousel__overlay-text {
@@ -44,6 +64,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width:1119px) {
+      display: none;
+    }
   }
   
   .carousel__overlay-text-img {
@@ -51,4 +75,8 @@
   
     font-size: 14px;
     color: rgba(255, 255, 255, 1);
+
+    @media screen and (max-width:1119px) {
+      display: none;
+    }
   }

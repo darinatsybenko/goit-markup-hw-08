@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body class="page"> 
-   <!-- <header class="header">
+   <header class="header">
       <div class="header__container">
          <a class="logo" href="./index.html"
            ><span class="Web">Web</span>Studio</a>
@@ -54,8 +54,8 @@
         </svg>
        </button>
        </div>
-     </header> -->
-    <main>
+     </header> 
+   <main>
       <section class="main-section">
         <div class="container"> 
         <h1 class="main-title">Ефективні рішення для <br> вашого бізнесу</h1>
@@ -121,8 +121,8 @@
            </form>
           </div>
         </div>
-      </section>-->
-     <!--- <section class="slogan">
+      </section>
+      <section class="slogan">
         <div class="container"> 
           <h2 class="hidden"> наші переваги</h2>
         <ul class="preview">
@@ -175,9 +175,9 @@
           </li>
         </ul>
         </div>
-      </section> -->
+      </section> 
 
-      <!--<section class="carousel">
+     <section class="carousel">
         <div class="container"> 
         <h2 class="carousel__caption carousel__caption--visible">Чим ми займаємося</h2>
         <div class="carousel__img-heading">
@@ -215,14 +215,24 @@
         </ul>
         </div>
         </div>
-      </section>
+      </section> 
       <section class="pagination">
         <div class="container"> 
-        <h2 class="carousel__caption--visible">Наша команда</h2>
+        <h2 class="carousel__caption--team">Наша команда</h2>
         <ul class="items-name">
           <li class="div-img">
-            <img
-              src="./images/img11.jpg" alt="чоловік" width="270" height="260"/>
+            <img alt="Ігор Дем'яненко"
+              srcset="./images/our-team/img_Igor-L.jpg 270w,
+              ./images/our-team/img_Igor-M.jpg 354w,
+              ./images/our-team/img_Igor-S.jpg 450w,
+              ./images/our-team/img_Igor-L-@2x.jpg 540w,
+              ./images/our-team/img_Igor-M-@2x.jpg 708w,
+              ./images/our-team/img_Igor-S-@2x.jpg 900w
+              "
+              sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px,
+              100vw"
+              src="./images/our-team/img_Igor-S.jpg"
+              />
             <div class="img-name">
             <h3 class="title-img">Ігор Дем'яненко</h3>
             <p class="desc" lang="en">Product Designer</p>
@@ -276,7 +286,16 @@
           </li>
           <li class="div-img">
             <img
-              src="./images/img22.jpg" alt="жінка" width="270" height="260"/>
+              srcset="./images/our-team/img_OLga-l.jpg 270w,
+              ./images/our-team/img_Olga-M.jpg 354w,
+              ./images/our-team/img_Olga-S.jpg 450w,
+              ./images/our-team/img_OLga-l-@2x.jpg 540w,
+              ./images/our-team/img_Olga-M-@2x.jpg 708w,
+              ./images/our-team/img_Olga-S-@2x.jpg 900w
+              "
+              sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px,
+              100vw"
+              src="./images/our-team/img_Olga-S.jpg" alt="жінка" />
             <div class="img-name">
             <h3 class="title-img">Ольга Рєпіна</h3>
             <p class="desc" lang="en">Frontend Developer</p>
@@ -330,7 +349,16 @@
           </li>
           <li class="div-img">
             <img
-              src="./images/img33.jpg" alt="чоловік" width="270" height="260"/>
+            srcset="./images/our-team/img_Mikola-L.jpg 270w,
+            ./images/our-team/img_Mikola-M.jpg 354w,
+            ./images/our-team/img_Mikola-S.jpg 450w,
+            ./images/our-team/img_Mikola-L-@2x.jpg 540w,
+            ./images/our-team/img_Mikola-M-@2x.jpg 708w,
+            ./images/our-team/img_Olga-S-@2x.jpg 900w
+            "
+            sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px,
+              100vw"
+              src="./images/our-team/img_Mikola-S.jpg" alt="чоловік" />
             <div class="img-name">
             <h3 class="title-img">Микола Тарасов</h3>
             <p class="desc" lang="en">Marketing</p>
@@ -384,7 +412,16 @@
           </li>
           <li class="div-img">
             <img
-              src="./images/img44.jpg" alt="чоловік" width="270" height="260"/>
+            srcset="./images./our-team./img_MIha-L.jpg 270w,
+            ./images/our-team/img_MIha-M.jpg 354w,
+            ./images/our-team/img_MIha-S.jpg 450w,
+            ./images/our-team/img_MIha-L-@2x.jpg 540w,
+            ./images/our-team/img_MIha-M-@2x.jpg 708w,
+            ./images/our-team/img_MIha-S-@2x.jpg 900w
+            "
+            sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px,
+            100vw"
+              src="./images/our-team/img_MIha-S.jpg" alt="чоловік" />
             <div class="img-name">
             <h3 class="title-img">Михайло Єрмаков</h3>
             <p class="desc" lang="en">UI Designer</p>
@@ -438,8 +475,8 @@
           </li>
         </ul>
         </div>
-      </section> -->
-     <!-- <section class="clients">
+      </section> 
+     <section class="clients">
       <div class="container">
         <h2 class="heading-clients">Постійні клієнти</h2>
         <ul class="clients-meta">
@@ -487,9 +524,9 @@
                     </li>
             </ul>
       </div>
-      </section> -->
+      </section> 
     </main>
-   <!--<footer class="footer">
+   <footer class="footer">
       <div class="container-footer"> 
         <div class="div-nav-social">
         <div class="div-footer">
