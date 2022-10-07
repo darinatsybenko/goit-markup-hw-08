@@ -1517,6 +1517,11 @@ body {
     outline: 1px solid red;
   }
 }
+@media screen and (max-width: 480px) {
+  .container-footer {
+    padding-bottom: 20px;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .div-footer {
