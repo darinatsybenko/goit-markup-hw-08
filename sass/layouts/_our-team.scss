@@ -28,16 +28,17 @@
   .items-name {
     list-style-type: none;
     font-style: normal;
-    display: flex;
+     display: flex;
     align-items: center;
-    gap: 30px;
+    // gap: 30px;
     justify-content: center;
 
-    @media screen and (max-width:1119px) {
+    @media screen and (min-width:480px) {
       display: block;
+      // flex-direction: column;
     }
 
-    @media screen and (max-width:767px) {
+    @media screen and (min-width:480px) {
       &:last-child {
         margin-bottom: 0px;
       }
@@ -46,8 +47,14 @@
       margin: -15px;
       display: flex;
       flex-wrap: wrap;
-     
-      
+    }
+    @media screen and (min-width:1200px) {
+      list-style-type: none;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      // gap: 30px;
+      justify-content: center;
     }
   }
   
