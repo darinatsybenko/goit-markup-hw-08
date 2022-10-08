@@ -4,8 +4,8 @@
 
    .footer-form {
     @media screen and (min-width:1200px) {
-     padding-top: 72px;
-     padding-bottom: 94px;
+    //  padding-top: 72px;
+    //  padding-bottom: 94px;
     }
 
     @media screen and (max-width:479px) {
@@ -70,6 +70,7 @@
     }
     @media screen and (min-width:1200px) {
       margin: 0;
+      width: 358px;
     }
 
     @media screen and (max-width:479px) {
