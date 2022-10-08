@@ -73,6 +73,16 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+@media screen and (max-width: 479px) {
+  .header {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header {
+    padding: 0;
+  }
+}
 
 .header__container {
   padding-left: 15px;
@@ -907,6 +917,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: #f5f4fa;
   }
 }
 
@@ -932,6 +943,7 @@ body {
 @media screen and (max-width: 479px) {
   .preview__subject {
     text-align: center;
+    margin-top: 20px;
   }
 }
 
@@ -1483,14 +1495,12 @@ body {
   .container-footer {
     width: 480px;
     height: 603px;
-    outline: 1px solid red;
   }
 }
 @media screen and (min-width: 768px) {
   .container-footer {
     width: 768px;
     height: 463px;
-    outline: 1px solid red;
   }
 }
 @media screen and (min-width: 1200px) {
