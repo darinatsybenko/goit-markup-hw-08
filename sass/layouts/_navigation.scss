@@ -50,6 +50,7 @@
 
     @media screen and (min-width:1200px) {
       gap: 30px;
+      margin-left: 0;
     }
     
   }
@@ -184,7 +185,7 @@
   }
  
   .items-nav .list-item:not(:last-child) {
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
       margin-bottom: 10px;
     }
   }

@@ -5,6 +5,8 @@
      align-items: center;
      margin-top: 0px;
      margin-bottom: 0px;
+
+   
   }
   
    .link-nav-adress {
@@ -26,6 +28,7 @@
     text-decoration: none;
     color: var(--main-light);
     margin-bottom: 9px;
+    text-align: left;
    }
       display: block;
       line-height: 1.7;
@@ -49,6 +52,10 @@
      color: rgba(255, 255, 255, 0.6);
      
      }
+
+     @media screen and (min-width:1200px) {
+      text-align: left;
+     }
      display: block;
       line-height: 1.7;
       letter-spacing: 0.03em;
@@ -66,6 +73,9 @@
     @media screen and (min-width:480px) {
       text-align: center;
     }
+    @media screen and (min-width:1200px) {
+      text-align: left;
+     }
 
      display: block;
      line-height: 1.7;
@@ -82,5 +92,7 @@
       color: #2196f3;
      }
    }
+
+
 
   
