@@ -1,5 +1,7 @@
  .footer {
-  // margin-top: 60px;
+   padding-top: 60px;
+   padding-bottom: 60px;
+  
      background-color: #2f303a;
 
      @media screen and (max-width:479px) {
@@ -15,24 +17,21 @@
       
       @media screen and (min-width:480px) {
         width: 480px;
-        height:603px;
+        
       }
 
       @media screen and  (min-width:768px) {
         width: 768px;
-        height: 463px;
+      
       }
     
         @media screen and (min-width: 1200px) {
           width: 1200px;
-          height: 252px;
           background-color: #2f303a;
          display: flex;
         align-items: baseline;
         padding-left: 15px;
         padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
        }
        @media screen and (max-width:479px) {
         padding-bottom: 20px;
@@ -56,25 +55,17 @@
    }
 
    .div-nav-social {
-    @media screen and (min-width:480px) and (max-width:767px) {
-     padding-top: 60px;
-     padding-bottom: 60px; 
-    }
-
-
-
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
       display: flex;
+      justify-content: space-around;
       align-items: center;
-      // padding-top: 60px;
-      // padding-bottom: 60px;
-      margin-left: 76px;
-      margin-right: 89px;
       align-items: flex-start;
+     padding-bottom: 60px;
     }
 
     @media screen and (min-width:1200px){
-      margin-right: 93px;
+      margin-right: auto;
+      display: flex;
       margin: 0;
     }
 
